@@ -2,7 +2,17 @@ import java.util.*;
 class SubArray_With_Sum_k506 {
     public static void main(String[] args) {
         int arr[]={1,1,1};
-       System.out.println(subarraySum(arr,2));
+      // System.out.println(subarraySum(arr,2));
+      fun(1,5);
+    }
+    public static void fun(int i,int n){
+        if(i>n){
+            return;
+        }
+        fun(i+1,n);
+        System.out.println(i);
+        
+
     }
 
     public static int subarraySum(int[] nums, int k) {
